@@ -1,0 +1,13 @@
+- name: sahith
+  dob: 08-08-1998
+  address: 
+    city: kadapa
+    country: india
+    street: nabikota
+  addresses:
+  - type: per
+    city: hyd
+    country: india
+  - type: temp
+    city: california
+    country: us
