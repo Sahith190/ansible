@@ -1,9 +1,12 @@
 [mongodb]
 
-172.31.38.231
-
 roboshop-us-dev-db-mongodb-01.sahith.online
 roboshop-us-dev-db-mongodb-02.sahith.online
+
+[mongodb:vars]
+
+MONGO_USERNAME=mongodbadmin
+MONGO_DB=categories
 
 
 [cart]
@@ -21,4 +24,9 @@ roboshop-us-dev-db-mysql-01.sahith.online
 roboshop-us-dev-db-mysql-02.sahith.online
 
 [db:children]
+mongodb
+mysql
+
 [app:children]
+cart
+user
