@@ -1,5 +1,8 @@
 - name: variables from inventory
   hosts: mongodb
+  mongodb:vars
+  - MONGO_USERNAME: mongodbadmin
+    MONGO_DB: categories
   tasks:
   - name: print mongodb username
     ansible.builtin.debug:
