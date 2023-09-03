@@ -1,7 +1,6 @@
 [mongodb]
 
 roboshop-us-dev-db-mongodb-01.sahith.online
-roboshop-us-dev-db-mongodb-02.sahith.online
 
 [mongodb:vars]
 
