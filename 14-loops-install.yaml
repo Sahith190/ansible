@@ -1,5 +1,5 @@
 - name: install packages
-  hosts: mongodb
+  hosts: localhost
   become: yes
   tasks:
   - name: install package
@@ -7,7 +7,7 @@
       name: "{{item}}"
       state: installed
     loop:
-    - nginx
-    - postfix
-    - cyrus-sasl-plain
-    - mailx
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'installed'}
+    - {name: 'cyrus-sasl-plain', state: 'installed'}
+    - {name: 'mailx', state: 'absent'}
