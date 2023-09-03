@@ -1,0 +1,9 @@
+- name: super
+  hosts: localhost
+  vars:
+    NAME: Super1
+  tasks:
+  - name: run this if name is super1
+    ansible.builtin.debug:
+      msg: "hello: {{NAME}}"
+    when: NAME == "Super1"
