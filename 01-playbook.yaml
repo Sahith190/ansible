@@ -1,5 +1,5 @@
 - name: ping the node
-  hosts: mongodb
+  hosts: roboshop-us-dev-db-mongodb-01.sahith.online
   tasks:
   - name: pinging the server
     ansible.builtin.ping:
